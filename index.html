@@ -1448,5 +1448,70 @@ about_role: "Lawyer • Spanish Teacher • Founder",
     // Boot
     window.onload = init;
   </script>
-</body>
+<script>
+  // ============================================
+  // FUNCIÓN PRINCIPAL: Cambia el idioma del sitio
+  // ============================================
+  function switchLanguage(lang) {
+    // Busca todos los elementos que tienen data-en y data-es
+    document.querySelectorAll('.lang-text').forEach(el => {
+      if (el.dataset[lang]) {
+        el.textContent = el.dataset[lang];
+      }
+    });
+
+    // Guarda la preferencia del usuario
+    localStorage.setItem('preferredLang', lang);
+
+    // Opcional: resalta el botón activo (ES o EN)
+    updateActiveLanguageButton(lang);
+  }
+
+  // Resalta el botón de idioma activo
+  function updateActiveLanguageButton(lang) {
+    const esBtn = document.getElementById('lang-es');
+    const enBtn = document.getElementById('lang-en');
+
+    if (esBtn && enBtn) {
+      if (lang === 'es') {
+        esBtn.classList.add('!bg-orange-500', '!text-white');
+        enBtn.classList.remove('!bg-orange-500', '!text-white');
+      } else {
+        enBtn.classList.add('!bg-orange-500', '!text-white');
+        esBtn.classList.remove('!bg-orange-500', '!text-white');
+      }
+    }
+  }
+
+  // ============================================
+  // INICIALIZACIÓN AL CARGAR LA PÁGINA
+  // ============================================
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. Cargar el idioma guardado (o inglés por defecto)
+    const savedLang = localStorage.getItem('preferredLang') || 'en';
+    switchLanguage(savedLang);
+
+    // 2. Conectar los botones ES y EN
+    // Busca los botones por ID o por texto
+    const langButtons = document.querySelectorAll('#lang-es, #lang-en, button, a');
+
+    langButtons.forEach(btn => {
+      const text = btn.textContent.trim().toUpperCase();
+
+      if (text === 'ES' || btn.id === 'lang-es') {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          switchLanguage('es');
+        });
+      }
+
+      if (text === 'EN' || btn.id === 'lang-en') {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          switchLanguage('en');
+        });
+      }
+    });
+  });
+</script></body>
 </html>
