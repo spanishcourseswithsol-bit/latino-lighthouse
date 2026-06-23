@@ -378,195 +378,224 @@
     </div>
   </section>
 
-  <!-- 3. CLASSES & ENCOUNTERS -->
-  <section id="classes" class="section-anchor bg-slate-900 text-white py-20">
-    <div class="max-w-screen-2xl mx-auto px-6 md:px-10">
-      <div class="max-w-3xl mx-auto text-center mb-12">
-        <span class="inline-block px-4 py-1 text-xs tracking-[1.5px] font-semibold text-orange-400 bg-white/10 rounded-full mb-4" data-i18n="classes_badge">EN VIVO Y EN CURSO</span>
-        <h2 class="section-title text-white" data-i18n="classes_title">Nuestras Clases y Encuentros</h2>
-        <p class="mt-3 text-lg text-white/70" data-i18n="classes_intro">Encuentra el grupo ideal para tu nivel y tus objetivos. Grupos reducidos, progreso real y personas maravillosas.</p>
+ ## Nuestras Clases y Encuentros
+
+Encuentra el grupo ideal para tu nivel y tus objetivos. Grupos reducidos, progreso real y personas maravillosas.
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+  <!-- 1 -->
+  <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
+    <div class="class-placeholder aspect-[580/387] flex items-center justify-center bg-gradient-to-br from-orange-500 to-amber-600">
+      <div class="text-center text-white">
+        <i class="fa-solid fa-globe text-4xl mb-2 opacity-90"></i>
+        <div class="text-xs tracking-[2px] font-medium opacity-75">EXPATS</div>
       </div>
+    </div>
+    <div class="p-6 flex-1 flex flex-col">
+      <div><span class="pill bg-white/10 text-orange-300">Integrate with Confidence</span></div>
+      <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">EXPATS AND DIGITAL NOMADS</h4>
+      <div class="mt-auto">
+        <button onclick="openEnrollModal('EXPATS AND DIGITAL NOMADS')" class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
+      </div>
+    </div>
+  </div>
 
-      <!-- Class Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
-                           <!-- EXPATS AND DIGITAL NOMADS - 1º -->
-        <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
-          <img 
-            src="assets/images/expats.jpg" 
-            alt="EXPATS AND DIGITAL NOMADS: Integrate with confidence"
-            class="w-full aspect-[580/387] object-cover"
-          />
-          <div class="p-6 flex-1 flex flex-col">
-            <div><span class="pill bg-white/10 text-orange-300">Integrate with Confidence</span></div>
-            <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">EXPATS AND DIGITAL NOMADS</h4>
-            <div class="mt-auto">
-              <button onclick="openEnrollModal('EXPATS AND DIGITAL NOMADS')" 
-                      class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
-            </div>
-          </div>
-        </div>
+  <!-- 2 -->
+  <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
+    <div class="class-placeholder aspect-[580/387] flex items-center justify-center bg-gradient-to-br from-teal-500 to-cyan-600">
+      <div class="text-center text-white">
+        <i class="fa-solid fa-heart text-4xl mb-2 opacity-90"></i>
+        <div class="text-xs tracking-[2px] font-medium opacity-75">WELLNESS</div>
+      </div>
+    </div>
+    <div class="p-6 flex-1 flex flex-col">
+      <div><span class="pill bg-white/10 text-teal-300">Spanish & Wellness</span></div>
+      <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">LET'S TALK ABOUT MINDFULNESS</h4>
+      <div class="mt-auto">
+        <button onclick="openEnrollModal('LET’S TALK ABOUT MINDFULNESS')" class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
+      </div>
+    </div>
+  </div>
 
-                           <!-- LET'S TALK ABOUT MINDFULNESS - 2º -->
-        <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
-          <img 
-            src="assets/images/mindfulness.jpg" 
-            alt="LET'S TALK ABOUT MINDFULNESS - Spanish & Wellness"
-            class="w-full aspect-[580/387] object-cover"
-          />
-          <div class="p-6 flex-1 flex flex-col">
-            <div><span class="pill bg-white/10 text-teal-300">Spanish & Wellness</span></div>
-            <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">LET'S TALK ABOUT MINDFULNESS</h4>
-            <div class="mt-auto">
-              <button onclick="openEnrollModal('LET\'S TALK ABOUT MINDFULNESS')" 
-                      class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
-            </div>
-          </div>
-        </div>
+  <!-- 3 -->
+  <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
+    <div class="class-placeholder aspect-[580/387] flex items-center justify-center bg-gradient-to-br from-purple-500 to-violet-600">
+      <div class="text-center text-white">
+        <i class="fa-solid fa-comment-dots text-4xl mb-2 opacity-90"></i>
+        <div class="text-xs tracking-[2px] font-medium opacity-75">CULTURE</div>
+      </div>
+    </div>
+    <div class="p-6 flex-1 flex flex-col">
+      <div><span class="pill bg-white/10 text-purple-300">Humour and Culture</span></div>
+      <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">SPANISH IDIOMS (Let’s Not Beat Around the Bush)</h4>
+      <div class="mt-auto">
+        <button onclick="openEnrollModal('SPANISH IDIOMS')" class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
+      </div>
+    </div>
+  </div>
 
-                   <!-- SPANISH IDIOMS - 3º -->
-        <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
-          <img
-            src="assets/images/idioms-latino.jpg"
-            alt="Spanish Idioms - Let’s Not Beat Around the Bush"
-            class="w-full aspect-[580/387] object-cover"
-          />
-          <div class="p-6 flex-1 flex flex-col">
-                       <div>
-              <span class="pill bg-white/10 text-orange-300 lang-text" 
-                    data-en="Humour and Culture" 
-                    data-es="Humor y Cultura">Humour and Culture</span>
-            </div>
-            <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">SPANISH IDIOMS (Let’s Not Beat Around the Bush)</h4>
-            <div class="mt-auto">
-              <button onclick="openEnrollModal('SPANISH IDIOMS (Let’s Not Beat Around the Bush)')"
-                      class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
-            </div>
-          </div>
-        </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div><span class="pill bg-white/10 text-orange-300" data-i18n="pill_group">Grupo</span></div>
-            <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">SPANISH CONVERSACIÓN COURSE / A2 Group</h4>
-            <div class="mt-auto">
-              <button onclick="openEnrollModal('SPANISH CONVERSACIÓN COURSE / A2 Group')" 
-                      class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
-            </div>
-          </div>
-        </div>
+  <!-- 4 - A2 -->
+  <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
+    <div class="class-placeholder aspect-[580/387] flex items-center justify-center bg-gradient-to-br from-orange-500 to-amber-600">
+      <div class="text-center text-white">
+        <i class="fa-solid fa-users text-4xl mb-2 opacity-90"></i>
+        <div class="text-xs tracking-[2px] font-medium opacity-75">GRUPO</div>
+      </div>
+    </div>
+    <div class="p-6 flex-1 flex flex-col">
+      <div><span class="pill bg-white/10 text-orange-300">Grupo</span></div>
+      <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">SPANISH CONVERSACIÓN COURSE / A2 Group</h4>
+      <div class="mt-auto">
+        <button onclick="openEnrollModal('SPANISH CONVERSACIÓN COURSE / A2 Group')" class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
+      </div>
+    </div>
+  </div>
 
-        <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
-          <div class="class-placeholder aspect-[580/387] flex items-center justify-center bg-gradient-to-br from-[#E85D04]/90 to-[#F48C06]">
-            <div class="text-center text-white">
-              <i class="fa-solid fa-users text-4xl mb-2 opacity-90"></i>
-              <div class="text-xs tracking-[2px] font-medium opacity-75">GRUPOS</div>
-            </div>
-          </div>
-        <!-- A2 Group -->
-        <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
-          <div class="class-placeholder aspect-[580/387] flex items-center justify-center bg-gradient-to-br from-orange-500 to-amber-600">
-            <div class="text-center text-white">
-              <i class="fa-solid fa-users text-4xl mb-2 opacity-90"></i>
-              <div class="text-xs tracking-[2px] font-medium opacity-75">GRUPO</div>
-            </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div><span class="pill bg-white/10 text-orange-300">Grupo</span></div>
-            <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">SPANISH CONVERSACIÓN COURSE / A2 Group</h4>
-            <div class="mt-auto">
-              <button onclick="openEnrollModal('SPANISH CONVERSACIÓN COURSE / A2 Group')"
-                      class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
-            </div>
-          </div>
-        </div>
+  <!-- 5 - B1 -->
+  <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
+    <div class="class-placeholder aspect-[580/387] flex items-center justify-center bg-gradient-to-br from-orange-500 to-amber-600">
+      <div class="text-center text-white">
+        <i class="fa-solid fa-users text-4xl mb-2 opacity-90"></i>
+        <div class="text-xs tracking-[2px] font-medium opacity-75">GRUPO</div>
+      </div>
+    </div>
+    <div class="p-6 flex-1 flex flex-col">
+      <div><span class="pill bg-white/10 text-orange-300">Grupo</span></div>
+      <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">SPANISH CONVERSACIÓN COURSE / B1 Group</h4>
+      <div class="mt-auto">
+        <button onclick="openEnrollModal('SPANISH CONVERSACIÓN COURSE / B1 Group')" class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
+      </div>
+    </div>
+  </div>
 
-        <!-- B1 Group (ya la tenías, la dejo por si acaso) -->
-        <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
-          <div class="class-placeholder aspect-[580/387] flex items-center justify-center bg-gradient-to-br from-orange-500 to-amber-600">
-            <div class="text-center text-white">
-              <i class="fa-solid fa-users text-4xl mb-2 opacity-90"></i>
-              <div class="text-xs tracking-[2px] font-medium opacity-75">GRUPO</div>
-            </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div><span class="pill bg-white/10 text-orange-300">Grupo</span></div>
-            <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">SPANISH CONVERSACIÓN COURSE / B1 Group</h4>
-            <div class="mt-auto">
-              <button onclick="openEnrollModal('SPANISH CONVERSACIÓN COURSE / B1 Group')"
-                      class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
-            </div>
-          </div>
-        </div>
+  <!-- 6 - Negocios -->
+  <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
+    <div class="class-placeholder aspect-[580/387] flex items-center justify-center bg-gradient-to-br from-purple-500 to-violet-600">
+      <div class="text-center text-white">
+        <i class="fa-solid fa-briefcase text-4xl mb-2 opacity-90"></i>
+        <div class="text-xs tracking-[2px] font-medium opacity-75">NEGOCIOS</div>
+      </div>
+    </div>
+    <div class="p-6 flex-1 flex flex-col">
+      <div><span class="pill bg-white/10 text-purple-300">Negocios</span></div>
+      <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">NEGOCIOS SPANISH GROUP COURSE</h4>
+      <div class="mt-auto">
+        <button onclick="openEnrollModal('NEGOCIOS SPANISH GROUP COURSE')" class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
+      </div>
+    </div>
+  </div>
 
-        <!-- Negocios Group, Self-Study, Tango, etc. ya las tienes bien -->
+  <!-- 7 - Self Study -->
+  <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
+    <div class="class-placeholder aspect-[580/387] flex items-center justify-center bg-gradient-to-br from-purple-500 to-violet-600">
+      <div class="text-center text-white">
+        <i class="fa-solid fa-play text-4xl mb-2 opacity-90"></i>
+        <div class="text-xs tracking-[2px] font-medium opacity-75">SELF-STUDY</div>
+      </div>
+    </div>
+    <div class="p-6 flex-1 flex flex-col">
+      <div><span class="pill bg-white/10 text-purple-300">Autodidacta</span></div>
+      <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">NEGOCIOS SPANISH SELF STUDY COURSE</h4>
+      <div class="mt-auto">
+        <button onclick="openEnrollModal('NEGOCIOS SPANISH SELF STUDY COURSE')" class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
+      </div>
+    </div>
+  </div>
 
-        <!-- Agrego las Masterclasses que faltaban con el mismo estilo -->
-        <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
-          <div class="class-placeholder aspect-[580/387] flex items-center justify-center bg-gradient-to-br from-[#F48C06] to-[#E85D04]">
-            <div class="text-center text-white">
-              <i class="fa-solid fa-graduation-cap text-4xl mb-2 opacity-90"></i>
-              <div class="text-xs tracking-[2px] font-medium opacity-75">MASTERCLASS</div>
-            </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div><span class="pill bg-white/10 text-orange-300">Masterclass</span></div>
-            <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">POR VS PARA Masterclass</h4>
-            <div class="mt-auto">
-              <button onclick="openEnrollModal('POR VS PARA Masterclass')"
-                      class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
-            </div>
-          </div>
-        </div>
+  <!-- 8 - Tango -->
+  <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
+    <img src="assets/images/tango-laura.jpg" alt="Tango" class="w-full aspect-[580/387] object-cover">
+    <div class="p-6 flex-1 flex flex-col">
+      <div><span class="pill bg-white/10 text-purple-300">Música & Cultura</span></div>
+      <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">TANGO YOUR SPANISH: Music, Idioms & Argentine Culture</h4>
+      <div class="mt-auto">
+        <a href="https://tidycal.com/spanish-conversation-club/tango-your-spanish-music-idioms-and-argentine-culture" target="_blank" class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition text-center block">Ver detalles y reservar</a>
+      </div>
+    </div>
+  </div>
 
-        <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
-          <div class="class-placeholder aspect-[580/387] flex items-center justify-center bg-gradient-to-br from-[#7B2CBF] to-[#5B21B6]">
-            <div class="text-center text-white">
-              <i class="fa-solid fa-music text-4xl mb-2 opacity-90"></i>
-              <div class="text-xs tracking-[2px] font-medium opacity-75">MASTERCLASS</div>
-            </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div><span class="pill bg-white/10 text-purple-300">Masterclass</span></div>
-            <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">Learning the SUBJUNCTIVE with Latin Music</h4>
-            <div class="mt-auto">
-              <button onclick="openEnrollModal('Learning the SUBJUNCTIVE with Latin Music')"
-                      class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
-            </div>
-          </div>
-        </div>
+  <!-- 9 - Ser o Estar -->
+  <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
+    <img src="assets/images/ser-o-estar.png" alt="Ser o Estar" class="w-full aspect-[580/387] object-cover">
+    <div class="p-6 flex-1 flex flex-col">
+      <div><span class="pill bg-white/10 text-orange-300">Masterclass</span></div>
+      <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">SER OR ESTAR ? That is the question...</h4>
+      <div class="mt-auto">
+        <a href="https://tidycal.com/spanish-conversation-club/ser-y-estar" target="_blank" class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition text-center block">Ver detalles y reservar</a>
+      </div>
+    </div>
+  </div>
 
-        <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
-          <div class="class-placeholder aspect-[580/387] flex items-center justify-center bg-gradient-to-br from-[#7B2CBF] to-[#5B21B6]">
-            <div class="text-center text-white">
-              <i class="fa-solid fa-music text-4xl mb-2 opacity-90"></i>
-              <div class="text-xs tracking-[2px] font-medium opacity-75">MASTERCLASS</div>
-            </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div><span class="pill bg-white/10 text-purple-300">Masterclass</span></div>
-            <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">Learning the SUBJUNCTIVE with Latin Music Part 2</h4>
-            <div class="mt-auto">
-              <button onclick="openEnrollModal('Learning the SUBJUNCTIVE with Latin Music Part 2')"
-                      class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
-            </div>
-          </div>
-        </div>
+  <!-- 10 - Por vs Para -->
+  <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
+    <div class="class-placeholder aspect-[580/387] flex items-center justify-center bg-gradient-to-br from-orange-500 to-amber-600">
+      <div class="text-center text-white">
+        <i class="fa-solid fa-graduation-cap text-4xl mb-2 opacity-90"></i>
+        <div class="text-xs tracking-[2px] font-medium opacity-75">MASTERCLASS</div>
+      </div>
+    </div>
+    <div class="p-6 flex-1 flex flex-col">
+      <div><span class="pill bg-white/10 text-orange-300">Masterclass</span></div>
+      <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">POR VS PARA Masterclass</h4>
+      <div class="mt-auto">
+        <button onclick="openEnrollModal('POR VS PARA Masterclass')" class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
+      </div>
+    </div>
+  </div>
 
-        <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
-          <div class="class-placeholder aspect-[580/387] flex items-center justify-center bg-gradient-to-br from-[#F48C06] to-[#E85D04]">
-            <div class="text-center text-white">
-              <i class="fa-solid fa-graduation-cap text-4xl mb-2 opacity-90"></i>
-              <div class="text-xs tracking-[2px] font-medium opacity-75">MASTERCLASS</div>
-            </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div><span class="pill bg-white/10 text-orange-300">Masterclass</span></div>
-            <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">PRONOMBRES DE OBJETO DIRECTO O INDIRECTO</h4>
-            <div class="mt-auto">
-              <button onclick="openEnrollModal('PRONOMBRES DE OBJETO DIRECTO O INDIRECTO')"
-                      class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
-            </div>
-          </div>
-        </div>
-  </section>
+  <!-- 11 - Subjunctive 1 -->
+  <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
+    <div class="class-placeholder aspect-[580/387] flex items-center justify-center bg-gradient-to-br from-purple-500 to-violet-600">
+      <div class="text-center text-white">
+        <i class="fa-solid fa-music text-4xl mb-2 opacity-90"></i>
+        <div class="text-xs tracking-[2px] font-medium opacity-75">MASTERCLASS</div>
+      </div>
+    </div>
+    <div class="p-6 flex-1 flex flex-col">
+      <div><span class="pill bg-white/10 text-purple-300">Masterclass</span></div>
+      <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">Learning the SUBJUNCTIVE with Latin Music</h4>
+      <div class="mt-auto">
+        <button onclick="openEnrollModal('Learning the SUBJUNCTIVE with Latin Music')" class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 12 - Subjunctive 2 -->
+  <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
+    <div class="class-placeholder aspect-[580/387] flex items-center justify-center bg-gradient-to-br from-purple-500 to-violet-600">
+      <div class="text-center text-white">
+        <i class="fa-solid fa-music text-4xl mb-2 opacity-90"></i>
+        <div class="text-xs tracking-[2px] font-medium opacity-75">MASTERCLASS</div>
+      </div>
+    </div>
+    <div class="p-6 flex-1 flex flex-col">
+      <div><span class="pill bg-white/10 text-purple-300">Masterclass</span></div>
+      <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">Learning the SUBJUNCTIVE with Latin Music Part 2</h4>
+      <div class="mt-auto">
+        <button onclick="openEnrollModal('Learning the SUBJUNCTIVE with Latin Music Part 2')" class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 13 - Pronombres -->
+  <div class="class-card bg-slate-800/70 border border-white/10 rounded-3xl overflow-hidden flex flex-col">
+    <div class="class-placeholder aspect-[580/387] flex items-center justify-center bg-gradient-to-br from-orange-500 to-amber-600">
+      <div class="text-center text-white">
+        <i class="fa-solid fa-graduation-cap text-4xl mb-2 opacity-90"></i>
+        <div class="text-xs tracking-[2px] font-medium opacity-75">MASTERCLASS</div>
+      </div>
+    </div>
+    <div class="p-6 flex-1 flex flex-col">
+      <div><span class="pill bg-white/10 text-orange-300">Masterclass</span></div>
+      <h4 class="font-semibold text-lg mt-3 mb-4 leading-tight">PRONOMBRES DE OBJETO DIRECTO O INDIRECTO</h4>
+      <div class="mt-auto">
+        <button onclick="openEnrollModal('PRONOMBRES DE OBJETO DIRECTO O INDIRECTO')" class="w-full py-3.5 rounded-2xl bg-white text-[#1E2937] font-semibold text-sm active:bg-amber-100 transition">See details and book</button>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 <!-- 4. ABOUT SOLANGE / MEET SOLANGE -->
 <section id="about" class="section-anchor max-w-screen-2xl mx-auto px-6 md:px-10 py-20">
